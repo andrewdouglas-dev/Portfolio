@@ -240,7 +240,7 @@ header.sticky{
 
 .project_img{
     border-radius: 8px;
-    height: 190px;
+    height: 70%;
     width: 100%;
 }
 
@@ -317,10 +317,6 @@ header.sticky{
 
     header.sticky{
         padding: 8px 3%;
-    }
-
-    .project_img{
-        height: fit-content;
     }
 }
 
