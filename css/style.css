@@ -1,0 +1,496 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --bg-color: #020312;
+    --text-color: #fff;
+    --main-color: #045d9c;
+    --second-color: gray;
+    --other-color: #12141c;
+    --h1-font: 5.2rem;
+    --h2-font: 3.5rem;
+    --p-font: 1.1rem;
+}
+
+.header_title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+}
+
+.header_name{
+    text-decoration: underline;
+    text-decoration-color: #045d9c;
+    text-underline-offset: 4px;
+}
+
+.header_sub_title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+}
+
+.logo_img{
+    width: 40px;
+    height: 40px;
+    display: flex;
+}
+
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+p{
+    font-size: 19px;
+}
+
+header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--bg-color);
+    padding: 22px 16%;
+    border-bottom: 1px solid transparent;
+    transition: all .40s ease;
+}
+
+.navbar{
+    display: flex;
+}
+
+.navbar a{
+    color: var(--text-color);
+    font-size: var(--p-font);
+    font-weight: bold;
+    padding: 10px 25px;
+    margin: 0 2px;
+    border-radius: 0.5rem;
+    transition: all .40s ease;
+}
+
+.navbar a:hover{
+    background-color: var(--main-color);
+    color: var(--text-color);
+}
+
+.section_head{
+    padding: 160px 16% 90px;
+    scroll-margin-top: 160px;
+}
+
+.section_body{
+    padding-left: 16%;
+    padding-right: 16%;
+    padding-bottom: 90px;
+    scroll-margin-top: 160px;
+}
+
+.skill_div{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 40px;
+    border-radius: 0.5rem;
+    font-size: 17px;
+    font-weight: 500;
+    background: var(--main-color);
+    color: var(--text-color);
+    border: 1px solid var(--main-color);
+    transition: all .40s ease;
+}
+
+
+header.sticky{
+    padding: 10px 16%;
+    background: var(--bg-color);
+    border-bottom: 1px solid #0e1630;
+}
+
+
+.tech_header{
+    text-align: center;
+    position: relative;
+}
+
+.title{
+    text-align: center;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    text-decoration: underline;
+    text-decoration-color: #045d9c;
+    text-underline-offset: 4px;
+}
+
+.about_title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    text-decoration: underline;
+    text-decoration-color: #045d9c;
+    text-decoration-line: underline;
+    text-underline-offset: 4px;
+}
+
+.section_header{
+    font-size: 22px;
+}
+
+.about_layout{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    gap: 2rem;
+}
+
+.about_img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    min-width: 300px;
+}
+
+.box_container{
+    padding-top: 2%;
+}
+
+.box{
+    padding: 45px;
+    background: #12141c;
+    border-top: 5px solid transparent;
+    border-radius: 0.5rem;
+    transition: all .40s ease;
+}
+
+.portfolio_content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2%;
+}
+
+.row{
+    padding: 25px;
+    background: #12141c;
+    border-radius: 0.5rem;
+    transition: all .40s ease;
+    height: 100%;
+}
+
+.row:hover{
+    transform: scale(1.01) translateY(-5px);
+    cursor: pointer;
+}
+
+.main_row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.main_text{
+    color: var(--main-color);
+    padding-top: 12px;
+}
+
+.language_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap: 1rem;
+    padding: 1rem 80px;
+    font-size: 1.2rem;
+}
+
+.tech_container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap: 1rem;
+    padding: 1rem 80px;
+    font-size: 1.2rem;
+}
+
+.box_skill{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 1rem;
+    color: #ddd;
+}
+
+.project_img{
+    border-radius: 8px;
+    height: 70%;
+    width: 100%;
+}
+
+.tech_img{
+    width: 90px;
+    height: 90px;
+    border-radius: 45px;
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+
+.skill_icon_l_to_s {
+    margin-top: 12.5px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+}
+
+.skill_icon{
+    margin-top: 9.5px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+}
+
+.top{
+    position: fixed;
+    bottom: 2.1rem;
+    right: 2.1rem;
+}
+
+.up_arrow{
+    width: 30px;
+    height: 30px;
+}
+
+.linkedin_img{
+    width: 30px;
+    height: 30px;
+}
+
+.company_img{
+    border-radius: 0.5rem;
+    width: 30%;
+    min-width: 200px;
+}
+
+.skill_certifications{
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    display: block;
+}
+
+
+/*                        */
+/* Responsive Breakpoints */
+/*                        */
+
+@media (max-width: 1325px){
+    header{
+        padding: 16px 3%;
+    }
+
+    header.sticky{
+        padding: 8px 3%;
+    }
+}
+
+@media (max-width: 970px){
+    :root{
+        --h1-font: 4.2rem;
+      --h2-font: 2.9rem;
+      --p-font: 1rem;
+    }
+    
+    .about_layout{
+        grid-template-columns: 1fr;
+    }
+
+    .about_img{
+        text-align: center;
+        width: 60%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .contact{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 830px){
+    .navbar{
+        position: absolute;
+        top: -600px;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        background: #12141c;
+        text-align: left;
+        transition: all .40s ease;
+    }
+
+    .navbar a{
+        display: block;
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    .navbar.active{
+        top: 100%;
+    }
+
+    :root{
+        --h1-font: 3.7rem;
+        --h2-font: 2.7rem;
+    }
+}
+
+/*                                        */
+/* Responsive Breakpoints for Tech Skills */
+/*                                        */
+
+@media screen and (max-width: 1500px) {
+    .skill_div{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 990px){
+    .language_container{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem 50px;
+    }
+
+    .tech_container{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem 50px;
+    }
+}
+    
+@media screen and (max-width: 650px){
+    .language_container{
+        grid-template-columns: 1fr;
+    }
+
+    .tech_container{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/*               */
+/* MODAL RELATED */
+/*               */
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+  
+.close:hover, .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal_box{
+    background-color: #12141c;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70%;
+    border-radius: 0.5rem;
+    transition: all .40s ease;
+}
+
+.modal_sub_box{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.modal_overlay{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 10%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal_header{
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+
+.modal_main_text{
+    color: var(--main-color);
+}
+
+.modal_media{
+    width: 60%;
+}
+
+/*                                        */
+/* Responsive Breakpoints for Modals      */
+/*                                        */
+
+@media screen and (max-width: 1500px) {
+    .modal_overlay{
+        padding-top: 15%;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .modal_overlay{
+        padding-top: 20%;
+    }
+}
+
+@media screen and (max-width: 990px){
+    .modal_media{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .modal_overlay{
+        padding-top: 25%;
+    }
+}
